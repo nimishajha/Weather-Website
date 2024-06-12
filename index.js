@@ -10,33 +10,33 @@ async function checkWeather(city){
     }
     else{
         document.querySelector(".error").style.display="none";
-    document.querySelector(".weather").style.display="block";
+        document.querySelector(".weather").style.display="block";
 
-    document.querySelector(".city").innerHTML=data.name;
-    document.querySelector(".temp").innerHTML=Math.round(data.main.temp)+" °C";
-    document.querySelector(".humi").innerHTML=data.main.humidity+" %";
-    document.querySelector(".wind p").innerHTML=data.wind.speed+" Km/h";
-    if(data.weather[0].main.toLowerCase()=="clouds"){
-        document.querySelector(".weather_img").setAttribute("src","../images/clouds.png");
-    }
-    if(data.weather[0].main.toLowerCase()=="clear"){
-        document.querySelector(".weather_img").setAttribute("src","../images/clear.png");
-    }
-    else if(data.weather[0].toLowerCase()=="drizzle"){
-        document.querySelector(".weather_img").setAttribute("src","../images/drizzle.png");
-    }
-    else if(data.weather[0].toLowerCase()=="humidity"){
-        document.querySelector(".weather_img").setAttribute("src","../images/humidity.png");
-    }
-    else if(data.weather[0].toLowerCase()=="mist"){
-        document.querySelector(".weather_img").setAttribute("src","../images/mist.png");
-    }
-    else if(data.weather[0].toLowerCase()=="rain"){
-        document.querySelector(".weather_img").setAttribute("src","../images/rain.png");
-    }
-    else if(data.weather[0].toLowerCase()=="snow"){
-        document.querySelector(".weather_img").setAttribute("src","../images/snow.png");
-    }
+        document.querySelector(".city").innerHTML=data.name;
+        document.querySelector(".temp").innerHTML=Math.round(data.main.temp)+" °C";
+        document.querySelector(".humi").innerHTML=data.main.humidity+" %";
+        document.querySelector(".wind p").innerHTML=data.wind.speed+" Km/h";
+        if(data.weather[0].main.toLowerCase()=="clouds"){
+            document.querySelector(".weather_img").setAttribute("src","../images/clouds.png");
+        }
+        else if(data.weather[0].main.toLowerCase()=="clear"){
+            document.querySelector(".weather_img").setAttribute("src","../images/clear.png");
+        }
+        else if(data.weather[0].toLowerCase()=="drizzle"){
+            document.querySelector(".weather_img").setAttribute("src","../images/drizzle.png");
+        }
+        else if(data.weather[0].toLowerCase()=="humidity"){
+            document.querySelector(".weather_img").setAttribute("src","../images/humidity.png");
+        }
+        else if(data.weather[0].toLowerCase()=="mist"){
+            document.querySelector(".weather_img").setAttribute("src","../images/mist.png");
+        }
+        else if(data.weather[0].toLowerCase()=="rain"){
+            document.querySelector(".weather_img").setAttribute("src","../images/rain.png");
+        }
+        else if(data.weather[0].toLowerCase()=="snow"){
+            document.querySelector(".weather_img").setAttribute("src","../images/snow.png");
+        }
     }
     
     
@@ -51,8 +51,3 @@ searchBtn.addEventListener("click",()=>{
 
 
 
-/*
-
-
-
-*/
